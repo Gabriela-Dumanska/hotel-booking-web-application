@@ -8,6 +8,8 @@
     <title>Hotel Azoria</title>
     <link rel="shortcut icon" href="images/HotelLogo.ico"/>
     <link rel="stylesheet" href="styles.css">
+    <!--<embed name="music" src="images/relaxing-145038.mp3" loop="true" hidden="true" autostart="true" width="0" height="0">-->
+
   </head>
   <body>
     <nav class="navbar">
@@ -73,15 +75,15 @@
           </div>
           <div class="box">
             <label>Data wyjazdu:</label>
-            <input type="date" placeholder="dataWyjazdu">
+            <input id="departure" type="date" placeholder="dataWyjazdu">
           </div>
           <div class="box">
             <label>Dorośli:</label> <br>
-            <input type="number" id="adults1" placeholder="0">
+            <input id="nadults" type="number" placeholder="0">
           </div>
           <div class="box">
             <label>Dzieci:</label> <br>
-            <input type="number" placeholder="0">
+            <input id="nkids" type="number" placeholder="0">
           </div>
           <div class="box">
             <label for="typ">Wybierz klasę pokoju:</label>
@@ -92,8 +94,11 @@
             </select>
           </div>
         </div>
+        <button onclick="getValues()">SZUKAJ</button>
+    </section>
+    <section>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.0397886129626!2d19.908029076037675!3d50.085541913571674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a4a512089c3%3A0x289ec516e3941795!2sMarii%20Jaremy%205%2C%2031-318%20Krak%C3%B3w!5e0!3m2!1spl!2spl!4v1698152034426!5m2!1spl!2spl" width="1300" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
     <script src="app.js"></script>
-    
   </body>
 </html>
