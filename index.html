@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+    content="width=device-width, initial scale=1.0">
+    <title>Hotel Azoria</title>
+    <link rel="shortcut icon" href="images/HotelLogo.ico"/>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/HotelAzoriaLogo.jpg" alt="Coś poszło nie tak... Tu powinno być logo :["/>
+        </div>
+      <div class="navbar__container">
+        <div class="navbar__toggle" id="mobile-menu">
+         <span class="bar">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__item">
+                <a href="/" class="navbar__links">HOTEL</a>
+            </li>
+            <li class="navbar__item">
+                <a href="pokoje.html" class="navbar__links">POKOJE</a>
+            </li>
+            <li class="navbar__item">
+                <a href="/" class="navbar__links">RESTAURACJA</a>
+            </li>
+            <li class="navbar__btn">
+                <a href="/" class="button">KONTAKT</a>
+             </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="container">
+        <div class="slider-wrapper">
+          <div class="slider">
+            <img id="slide-1" src="images/backdrop2.jpg"/>
+            <img id="slide-2" src="images/backdrop3.jpg"/>
+            <img id="slide-3" src="images/backdrop4.jpg"/>
+          </div>
+          <div class="slider-nav">
+            <a href="#slide-1"></a>
+            <a href="#slide-2"></a>
+            <a href="#slide-3"></a>
+          </div>
+        </div>
+    </section>
+    <section class="sidebar">
+      <p class="char">bezpłatne wi-fi</p> 
+      <p class="char">idealna lokalizacja</p> 
+      <p class="char">akceptujemy zwierzęta</p>
+      <p class="char">monitorowany parking</p> 
+      <div class="iconschar">
+        <img class="iconchar1" src="images/wifi.png"/>
+        <img class="iconchar2" src="images/location.png"/>
+        <img class="iconchar3" src="images/pet.jpg"/>
+        <img class="iconchar4" src="images/parking.png"/>
+
+      </div>
+    </section>
+    <section class="book">
+      <div class="container flex">
+        <div class="input grid">
+          <div class="box">
+            <label>Data przyjazdu:</label>
+            <input id="arrival" type="date" placeholder="dataPrzyjazdu">
+          </div>
+          <div class="box">
+            <label>Data wyjazdu:</label>
+            <input type="date" placeholder="dataWyjazdu">
+          </div>
+          <div class="box">
+            <label>Dorośli:</label> <br>
+            <input type="number" id="adults1" placeholder="0">
+          </div>
+          <div class="box">
+            <label>Dzieci:</label> <br>
+            <input type="number" placeholder="0">
+          </div>
+          <div class="box">
+            <label for="typ">Wybierz klasę pokoju:</label>
+            <select id="typ" name=""typpokoju">
+              <option value="st">Standard</option>
+              <option value="pr">Premium</option>
+              <option value="vip">Vip</option>
+            </select>
+          </div>
+        </div>
+    </section>
+    <script src="app.js"></script>
+    
+  </body>
+</html>
