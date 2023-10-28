@@ -102,7 +102,6 @@
     display: flex;
     aspect-ratio: 16/4;
     overflow-x: hidden;
-    scroll-snap-type: x mandatory;
 }
 
 .slider img {
