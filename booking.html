@@ -8,15 +8,48 @@
     <title>Hotel Azoria-Booking</title>
     <link rel="shortcut icon" href="images/HotelLogo.ico"/>
     <link rel="stylesheet" href="styles.css">
-    <script src="app.js"></script>
   </head>
   <body onload="myFunction()">
+    <nav class="navbar">
+      <div class="logo">
+        <img src="images/HotelAzoriaLogo.jpg" alt="Coś poszło nie tak... Tu powinno być logo :["/>
       </div>
-      Data przyjazdu: <span id="data"></span><br> 
-      Data wyjazdu: <span id="data1"> Password</span><br>
-      Liczba dorosłych: <span id="data2"> Mobile</span><br>
-      Liczba dzieci: <span id="data3"> Telephone</span><br>
-      Klasa pokoju: <span id="data4"> Telephone</span><br>
+      <div class="navbar__container">
+        <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__item">
+                <a href="/" class="navbar__links">HOTEL</a>
+            </li>
+            <li class="navbar__item">
+                <a href="pokoje.html" class="navbar__links">POKOJE</a>
+            </li>
+            <li class="navbar__item">
+                <a href="/" class="navbar__links">RESTAURACJA</a>
+            </li>
+            <li class="navbar__btn">
+                <a href="/" class="button">KONTAKT</a>
+            </li>
+        </ul>
       </div>
+    </nav>
+    <section class="container-forest">
+      <img id="forestbackground" src="images/forest- booking background.jpg" width="100%">
+        <div class="block">
+          <div class="rezerwacja">
+            <h4>Podsumowanie rezerwacji</h4>
+            Data przyjazdu: <span id="data">-</span><br> 
+            Data wyjazdu: <span id="data1"> -</span><br>
+            Liczba dorosłych: <span id="data2"> 0</span><br>
+            Liczba dzieci: <span id="data3"> 0</span><br>
+            Klasa pokoju: <span id="data4"> -</span><br>
+        </div>
+      </div>
+    </section>
+      <script src="app.js"></script>
   </body>
   </html>

@@ -66,39 +66,47 @@
 
       </div>
     </section>
-    <section class="book">
-      <div class="container flex">
-        <div class="input grid">
-          <div class="box">
-            <label>Data przyjazdu:</label>
-            <input id="arrival" type="date" placeholder="dataPrzyjazdu">
+      <div class="book">
+            <div class="box-header">
+              <h4>Zaplanuj wyjazd</h4>
+            </div>
+            <div class="input grid">
+            <div class="box">
+              <label>Data przyjazdu:</label>
+              <input id="arrival" type="date">
+            </div>
+            <div class="box">
+              <label>Data wyjazdu:</label>
+              <input id="departure" type="date">
+            </div>
+            <div class="box">
+              <label>Dorośli:</label>
+              <input id="nadults" type="number" placeholder="0">
+            </div>
+            <div class="box">
+              <label>Dzieci:</label>
+              <input id="nkids" type="number" placeholder="0">
+            </div>
+            <div class="box">
+              <label for="typ">Wybierz klasę pokoju:</label>
+              <select id="typ" name=""typpokoju">
+                <option value="st">Standard</option>
+                <option value="pr">Premium</option>
+                <option value="vip">Vip</option>
+              </select>
+            </div>
           </div>
-          <div class="box">
-            <label>Data wyjazdu:</label>
-            <input id="departure" type="date" placeholder="dataWyjazdu">
-          </div>
-          <div class="box">
-            <label>Dorośli:</label> <br>
-            <input id="nadults" type="number" placeholder="0">
-          </div>
-          <div class="box">
-            <label>Dzieci:</label> <br>
-            <input id="nkids" type="number" placeholder="0">
-          </div>
-          <div class="box">
-            <label for="typ">Wybierz klasę pokoju:</label>
-            <select id="typ" name=""typpokoju">
-              <option value="st">Standard</option>
-              <option value="pr">Premium</option>
-              <option value="vip">Vip</option>
-            </select>
-          </div>
-        </div>
-        <button onclick="getValues()">SZUKAJ</button>
-    </section>
-    <section>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.0397886129626!2d19.908029076037675!3d50.085541913571674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a4a512089c3%3A0x289ec516e3941795!2sMarii%20Jaremy%205%2C%2031-318%20Krak%C3%B3w!5e0!3m2!1spl!2spl!4v1698152034426!5m2!1spl!2spl" width="1300" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
+          <button id="szukajbutton" onclick="getValues()">SZUKAJ</button>
+      <div class="mapcontainer">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.0397886129626!2d19.908029076037675!3d50.085541913571674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a4a512089c3%3A0x289ec516e3941795!2sMarii%20Jaremy%205%2C%2031-318%20Krak%C3%B3w!5e0!3m2!1spl!2spl!4v1698152034426!5m2!1spl!2spl" width: style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
     <script src="app.js"></script>
+    <footer>
+      <div class="footer">
+        <a href="https://github.com/Gabriela-Dumanska" class="ftext" style="color: #faf4f6; text-decoration: none;">Gabriela Dumańska  |  dumanska@student.agh.edu.pl  |  Mikro projekt WDAI- 2023</a>
+      </div>
+    </footer>
   </body>
 </html>

@@ -106,7 +106,6 @@
 
 .slider img {
     flex: 1 0 100%;
-    scroll-snap-align: start;
     object-fit: cover;
 }
 
@@ -171,10 +170,130 @@
     width: 3.7vw;
 }
 
+.containerforest {
+    position: static;
+  }
+#forestbackground{
+    opacity: 0.5;
+}
 
+.book{
+    position: relative;
+    background-color: #faf4f6;
+    height: 30vw;
+    width: 100%;
+}
+
+.mapcontainer{
+    position: absolute;
+    top:10%;
+    height: 80%;
+    width: 55%;
+    margin-left: 40%;
+    border-style: solid;
+    border-color: #87ac84;
+
+}
+.map{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.box-header{
+    color: #385038;
+    padding-top: 5vw;
+    padding-left: 5vw;
+    padding-bottom: 1vw;
+    font-size: 3vw;
+}
+.box{
+    padding-left: 6vw;
+    padding-bottom: 0.5vw;
+    font-size: 2vw;
+}
+
+input[type='number']{
+    width: 3vw;
+    font-size: 1.8vw;
+    color: #385038;
+} 
+input[type='date']{
+    width: 12.5vw;
+    font-size: 1.8vw;
+    color: #385038;
+}
+#typ{
+    width: 10vw;
+    font-size: 1.8vw;
+    color: #385038;
+}
+#szukajbutton{
+    margin-top: 1vw;
+    margin-left: 15%;
+    width:10%;
+    height:3vw;
+    font-size: 2vw;
+    font-weight: bold;
+    color: #faf4f6;
+    border-radius: 5%;
+    background-color: #385038;
+
+}
+.footer{
+    background-color: #385038;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    text-align: center;
+}
+.ftext:link{
+    opacity: 50%;
+}
+.ftext:hover {
+    opacity: 100%;
+}
 
 @media screen and (max-width: 960px) {
-
+    .box-header{
+        margin-left: 10%;
+        font-size: 6vw;
+        margin-bottom: 5%;
+    }
+    .box{
+        margin-left: 10%;
+        font-size: 4vw;
+    }
+    input[type='number']{
+        width: 7vw;
+        font-size: 3.5vw;
+    } 
+    input[type='date']{
+        width: 30vw;
+        font-size: 3.5vw;
+    }
+    #typ{
+        width: 25vw;
+        font-size: 3.5vw;
+    }
+    #szukajbutton{
+        margin-top: 5%;
+        margin-left: 35%;
+        width:30%;
+        height:5vw;
+        font-size: 4vw;
+    }
+    .book{
+        height: 100vw;
+    }
+    .mapcontainer{
+        margin-left: 10%;
+        width: 80%;
+        top:60%;
+        height: 35vw;
+    }
+    .map{
+        height: 100%;
+    }
     .slider-wrapper {
         margin: 0 auto;
         width: 100%;
