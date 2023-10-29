@@ -100,7 +100,8 @@
 }
 .slider {
     display: flex;
-    aspect-ratio: 16/4;
+    
+    aspect-ratio: 16/3;
     overflow-x: hidden;
 }
 
@@ -169,14 +170,6 @@
     margin-right: 12vw ;
     width: 3.7vw;
 }
-
-.containerforest {
-    position: static;
-  }
-#forestbackground{
-    opacity: 0.5;
-}
-
 .book{
     position: relative;
     background-color: #faf4f6;
@@ -251,6 +244,30 @@ input[type='date']{
 }
 .ftext:hover {
     opacity: 100%;
+}
+.container-forest{
+    position: relative;
+    height: 
+    width: 100%;
+    opacity: 80%;
+}
+.forestpic{
+    display: flex;
+    aspect-ratio: 16/6;
+}
+.block{
+    position: absolute;
+    top:15%;
+    left: 20%;
+    width: 60%;
+    height: 70%;
+    background-color: #faf4f6;
+}
+.rezerwacja{
+    position: absolute;
+    top: 200px;
+    margin-left: 50%;
+    z-index: 50;
 }
 
 @media screen and (max-width: 960px) {

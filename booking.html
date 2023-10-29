@@ -37,19 +37,25 @@
         </ul>
       </div>
     </nav>
-    <section class="container-forest">
-      <img id="forestbackground" src="images/forest- booking background.jpg" width="100%">
-        <div class="block">
-          <div class="rezerwacja">
+    <div class="container-forest">
+      <div class="forestpic">
+        <img id="forestbackground" src="images/forest- booking background.jpg" width="100%">
+      </div>
+      <div class="block">
             <h4>Podsumowanie rezerwacji</h4>
             Data przyjazdu: <span id="data">-</span><br> 
             Data wyjazdu: <span id="data1"> -</span><br>
             Liczba dorosłych: <span id="data2"> 0</span><br>
             Liczba dzieci: <span id="data3"> 0</span><br>
             Klasa pokoju: <span id="data4"> -</span><br>
-        </div>
+            <h4>Uzupełnij swoje dane</h4>
+            <label>Imię:</label>
+            <input id="name" type="text" maxlength="20"><br>
+            <label>Numer telefonu:</label>
+            <input id="number" type="text" maxlength="10">
+
       </div>
-    </section>
+    </div>
       <script src="app.js"></script>
   </body>
   </html>
