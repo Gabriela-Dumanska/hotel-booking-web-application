@@ -5,7 +5,9 @@
     font-family: "Times New Roman", serif;
 }
 
-
+.music{
+    top: -1000%;
+}
 .navbar {
     background:#faf4f6;
     height: 130px;
@@ -233,11 +235,15 @@ input[type='date']{
 
 }
 .footer{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
     background-color: #385038;
     padding-top: 1%;
     padding-bottom: 1%;
     padding-left: 1%;
-    text-align: center;
+    align-items: center;
 }
 .ftext:link{
     opacity: 50%;
@@ -245,29 +251,65 @@ input[type='date']{
 .ftext:hover {
     opacity: 100%;
 }
-.container-forest{
-    position: relative;
-    height: 
-    width: 100%;
-    opacity: 80%;
-}
-.forestpic{
+.bodyBooking{
     display: flex;
-    aspect-ratio: 16/6;
+    height: 100%;
+    flex-direction: column;
+    background-image: url("images/forestback.jpg");
+    background-size:cover;
 }
+
 .block{
-    position: absolute;
-    top:15%;
-    left: 20%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+    margin-left: 20%;
     width: 60%;
     height: 70%;
     background-color: #faf4f6;
 }
+.blocktext{
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-bottom: 3%;
+    font-size: 1.9vw;
+}
+#number{
+    width: 9vw;
+    font-size: 1.5vw;
+}
+#name{
+    width: 17.5vw;
+    font-size: 1.5vw;
+}
+#potwierdzeniebutton{
+    margin-top: 5%;
+    width: 15vw;
+    height: 3vw;
+    font-weight: bold;
+    font-size: 2vw;
+}
+#potwierdzeniebutton:hover {
+    background:  #87ac84;
+    transition: all 0.3s ease;
+}
+
 .rezerwacja{
     position: absolute;
     top: 200px;
     margin-left: 50%;
     z-index: 50;
+}
+#roomphoto{
+    position: absolute;
+    border-radius: 1%;
+    object-fit: cover;
+    margin-left: 45%;
+    margin-top: 4%;
+    height: 80%;
+    width: 50%;
 }
 
 @media screen and (max-width: 960px) {

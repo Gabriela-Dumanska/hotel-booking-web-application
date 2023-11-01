@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="images/HotelLogo.ico"/>
     <link rel="stylesheet" href="styles.css">
   </head>
-  <body class="bodyBooking" onload="myFunction()">
+  <body onload="myFunction()">
     <nav class="navbar">
       <div class="logo">
         <img src="images/HotelAzoriaLogo.jpg" alt="Coś poszło nie tak... Tu powinno być logo :["/>
@@ -38,28 +38,15 @@
       </div>
     </nav>
     <div class="block">
-        <div class="blocktext">
-              <h4>Podsumowanie rezerwacji</h4>
-              Data przyjazdu: <span id="data">-</span><br> 
-              Data wyjazdu: <span id="data1"> -</span><br>
-              Liczba dorosłych: <span id="data2"> 0</span><br>
-              Liczba dzieci: <span id="data3"> 0</span><br>
-              Klasa pokoju: <span id="data4"> -</span><br><br>
-              <h4>Uzupełnij swoje dane</h4>
-              <label>Imię:</label>
-              <input id="name" type="text" maxlength="20"><br>
-              <label>Numer telefonu:</label>
-              <input id="number" type="text" maxlength="10"><br>
-              <button id="potwierdzeniebutton" onclick="getValues2()">POTWIERDŹ</button>
-        </div>
-              <img id="roomphoto">
-      </div>
+        <h4>Potwierdzenie rezerwacji</h4>
+        Data przyjazdu: <span id="data">-</span><br> 
+        Data wyjazdu: <span id="data1"> -</span><br>
+        Liczba dorosłych: <span id="data2"> 0</span><br>
+        Liczba dzieci: <span id="data3"> 0</span><br>
+        Klasa pokoju: <span id="data4"> -</span><br>
+        Imię: <span id="name">-</span><br>
+        Numer telefonu: <span id="number">-</span><br>
+  </div>
       <script src="app.js"></script>
   </body>
-  <footer>
-    <div class="footer">
-      <a href="https://github.com/Gabriela-Dumanska" style="color: #faf4f6; text-decoration: none;">Gabriela Dumańska  |  dumanska@student.agh.edu.pl  |  Mikro projekt WDAI- 2023</a>
-    </div>
-  </footer>
-  
   </html>
