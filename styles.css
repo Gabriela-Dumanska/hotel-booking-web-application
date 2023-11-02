@@ -334,9 +334,63 @@ input[type='date']{
     height: 80%;
     width: 50%;
 }
+.roomtable{
+    width: 90%;
+    margin-left: 5%;
+    border: 2px;
+}
+table{
+    margin-top: 1%;
+    margin-bottom: 4vw;
+    table-layout: fixed;
+    font-size: 2vw;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid #385038;
+    text-align: center;
+    background-color: #faf4f6;
+}
+thead{
+    font-size: 3vw;
+    color: #87ac84;
+}
+tbody tr:nth-child(even) {
+    background-color: #87ac842f;
+}
+td{
+    padding: 2.3px;
+}
+.roomtablemobile{
+    display: none;
+}
+
+#tablepic{
+    height: 10vw;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    border: 3px solid #87ac84;
+    border-radius: 5%;
+}
 
 
 @media screen and (max-width: 960px) {
+    .roomtable{
+        display: none;
+    }
+    .roomtablemobile{
+        display: contents;
+    }
+    table{
+        font-size: 3vw;
+        width: 80%;
+        margin-left: 10%;
+    }
+    #table3{
+        margin-bottom: 12vw;
+    }
+    thead{
+        font-size: 5vw;
+    }
     #roomphoto, #welcome{
         margin-left: 5%;
         margin-top: 62%;
