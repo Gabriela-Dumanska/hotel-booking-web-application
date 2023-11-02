@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="images/HotelLogo.ico"/>
     <link rel="stylesheet" href="styles.css">
   </head>
-  <body onload="myFunction()">
+  <body class="bodyBooking" onload="myFunction2()">
     <nav class="navbar">
       <div class="logo">
         <img src="images/HotelAzoriaLogo.jpg" alt="Coś poszło nie tak... Tu powinno być logo :["/>
@@ -37,16 +37,26 @@
         </ul>
       </div>
     </nav>
-    <div class="block">
-        <h4>Potwierdzenie rezerwacji</h4>
-        Data przyjazdu: <span id="data">-</span><br> 
-        Data wyjazdu: <span id="data1"> -</span><br>
-        Liczba dorosłych: <span id="data2"> 0</span><br>
-        Liczba dzieci: <span id="data3"> 0</span><br>
-        Klasa pokoju: <span id="data4"> -</span><br>
-        Imię: <span id="name">-</span><br>
-        Numer telefonu: <span id="number">-</span><br>
+  <div class="block">
+    <div class="blocktext">
+        <h4 id="dziekujemy">Dziękujemy...</h4><br>
+        Data przyjazdu: <span id="data.2">-</span><br> 
+        Data wyjazdu: <span id="data1.2"> -</span><br>
+        Liczba dorosłych: <span id="data2.2"> 0</span><br>
+        Liczba dzieci: <span id="data3.2"> 0</span><br>
+        Klasa pokoju: <span id="data4.2"> -</span><br>
+        Imię: <span id="name2">-</span><br>
+        Nr tel.: <span id="number2">-</span><br><br>
+        <h4 id="dziekujemy">Do zobaczenia!</h4>
+    </div>
+          <img id="welcome" src="images/dziekuje.jpg">
   </div>
       <script src="app.js"></script>
   </body>
+  
+  <footer>
+    <div class="footer">
+      <a href="https://github.com/Gabriela-Dumanska" class="ftext" style="color: #faf4f6; text-decoration: none;">Gabriela Dumańska  |  dumanska@student.agh.edu.pl  |  Mikro projekt WDAI- 2023</a>
+    </div>
+  </footer>
   </html>

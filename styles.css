@@ -175,13 +175,13 @@
 .book{
     position: relative;
     background-color: #faf4f6;
-    height: 30vw;
+    height: 33vw;
     width: 100%;
 }
 
 .mapcontainer{
     position: absolute;
-    top:10%;
+    top:8%;
     height: 80%;
     width: 55%;
     margin-left: 40%;
@@ -235,15 +235,14 @@ input[type='date']{
 
 }
 .footer{
-    display: flex;
-    position: relative;
-    flex-direction: column;
+    position: fixed;
     width: 100%;
     background-color: #385038;
     padding-top: 1%;
     padding-bottom: 1%;
     padding-left: 1%;
-    align-items: center;
+    bottom: 0;
+    text-align: center;
 }
 .ftext:link{
     opacity: 50%;
@@ -253,6 +252,7 @@ input[type='date']{
 }
 .bodyBooking{
     display: flex;
+    position: relative;
     height: 100%;
     flex-direction: column;
     background-image: url("images/forestback.jpg");
@@ -264,7 +264,7 @@ input[type='date']{
     display: flex;
     flex-direction: row;
     margin-top: 4vw;
-    margin-bottom: 4vw;
+    margin-bottom: 5vw;
     margin-left: 20%;
     width: 60%;
     height: 70%;
@@ -275,6 +275,9 @@ input[type='date']{
     margin-left: 5%;
     margin-bottom: 3%;
     font-size: 1.9vw;
+}
+#blockp{
+    margin-bottom: 1%;
 }
 #number{
     width: 9vw;
@@ -311,8 +314,50 @@ input[type='date']{
     height: 80%;
     width: 50%;
 }
+.blockpotwierdzenie{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #385038;
+    color: #faf4f6;
+    justify-content: space-between;
+    font-size: 3vw;
+    
+}
+#welcome{
+    position: absolute;
+    border-radius: 1%;
+    object-fit: cover;
+    margin-left: 45%;
+    margin-top: 4%;
+    height: 80%;
+    width: 50%;
+}
+
 
 @media screen and (max-width: 960px) {
+    #roomphoto, #welcome{
+        margin-left: 5%;
+        margin-top: 62%;
+        height: 60vw;
+        width: 90%;
+    }
+    .block{
+        height: 102vw;
+        flex-direction: column;
+    }
+    .blocktext{
+        margin-left: 6%;
+        font-size: 2.3vw;
+
+    }
+    #name{
+        width: 22.3vw;
+    }
+    #number{
+        width: 12vw;
+    }
     .box-header{
         margin-left: 10%;
         font-size: 6vw;
@@ -342,7 +387,7 @@ input[type='date']{
         font-size: 4vw;
     }
     .book{
-        height: 100vw;
+        height: 102vw;
     }
     .mapcontainer{
         margin-left: 10%;

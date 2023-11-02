@@ -44,4 +44,12 @@ function myFunction(){
         document.getElementById("roomphoto").src= "images/viproom.jpg";
     }
 }
-
+function myFunction2(){
+    document.getElementById("data.2").innerHTML=localStorage.getItem("val1");
+    document.getElementById("data1.2").innerHTML=localStorage.getItem("val2");
+    document.getElementById("data2.2").innerHTML=localStorage.getItem("val3");
+    document.getElementById("data3.2").innerHTML=localStorage.getItem("val4");
+    document.getElementById("data4.2").innerHTML=localStorage.getItem("val5");
+    document.getElementById("name2").innerHTML=localStorage.getItem("name");
+    document.getElementById("number2").innerHTML=localStorage.getItem("number");
+}
