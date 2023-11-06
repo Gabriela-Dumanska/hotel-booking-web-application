@@ -5,43 +5,44 @@
     <meta charset="utf-8">
     <meta name="viewport"
     content="width=device-width, initial scale=1.0">
-    <title>Hotel Azoria-Pokoje</title>
+    <title>Hotel Azoria-Kontakt</title>
     <link rel="shortcut icon" href="images/HotelLogo.ico"/>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body class="bodyBooking">
-    <nav class="navbar">
+    <nav class="topBar">
       <div class="logo">
           <img src="images/HotelAzoriaLogo.jpg" alt="Coś poszło nie tak... Tu powinno być logo :["/>
       </div>
-      <div class="navbar__container">
-        <div class="navbar__toggle" id="mobile-menu">
+      <div class="topBar__container">
+        <div class="topBar__toggle" id="mobile-menu">
         <span class="bar">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
         </div>
-        <ul class="navbar__menu">
-            <li class="navbar__item">
-                <a href="/" class="navbar__links">HOTEL</a>
+        <ul class="topBar__menu">
+            <li class="topBar__item">
+                <a href="/" class="topBar__links">HOTEL</a>
             </li>
-            <li class="navbar__item">
-                <a href="pokoje.html" class="navbar__links">POKOJE</a>
+            <li class="topBar__item">
+                <a href="pokoje.html" class="topBar__links">POKOJE</a>
             </li>
-            <li class="navbar__btn">
+            <li class="topBar__btn">
                 <a href="kontakt.html" class="button">KONTAKT</a>
             </li>
         </ul>
       </div>
     </nav>
-    <div class="contact">
-        <h3 class="contact-h3">Napisz do nas</h3>
-        <form id="contactform">
-            <input type="text" placeholder="Imię" id="namecontact" required/><br><br>
-            <input type="email" placeholder="E-mail" id="emailcontact" required/><br><br>
-            <input type="checkbox" id="newsletter" /> Chciałbym dostawać powiadomienia o najnowszych promocjach! <br><br>
-            <textarea id="question" rows="4" placeholder="Napisz wiadomość..." required></textarea><br><br>
-            <button onclick="Contact()" class="submitbutton">Wyślij</button>
+    <div class="contactFormContainer">
+      <h1 id="contactFormHeader">Napisz do nas</h1>
+      <form name="contactForm" onsubmit="return validateContactForm()">
+        <label for="fname">Imię:</label><br><input type="text" id="fname" maxlength="20"><br>
+        <label for="femail">E-mail:</label><br><input type="text" id="femail"><br><br>
+        <input type="checkbox" id="fcheckbox"><label id="newsletter">Chcesz otrzymywać od Nas regularne informacje o promocjach?</label><br><br>
+        <label for="fmessage">Wiadomość</label><br>
+        <textarea id="fmessage" rows="4" maxlength="400"></textarea><br>
+        <input type="submit" value="Wyślij" id="send">
         </form>
     </div>
     <script src="app.js"></script>
@@ -50,5 +51,4 @@
         <a href="https://github.com/Gabriela-Dumanska" style="color: #faf4f6; text-decoration: none;">Gabriela Dumańska  |  dumanska@student.agh.edu.pl  |  Mikro projekt WDAI- 2023</a>
       </div>
     </footer>
-    
     </html>

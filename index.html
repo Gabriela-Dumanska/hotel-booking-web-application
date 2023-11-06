@@ -12,43 +12,36 @@
 
   </head>
   <body>
-    <nav class="navbar">
+    <nav class="topBar">
         <div class="logo">
             <img src="images/HotelAzoriaLogo.jpg" alt="Coś poszło nie tak... Tu powinno być logo :["/>
         </div>
-      <div class="navbar__container">
-        <div class="navbar__toggle" id="mobile-menu">
+      <div class="topBar__container">
+        <div class="topBar__toggle" id="mobile-menu">
          <span class="bar">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
         </div>
-        <ul class="navbar__menu">
-            <li class="navbar__item">
-                <a href="/" class="navbar__links">HOTEL</a>
+        <ul class="topBar__menu">
+            <li class="topBar__item">
+                <a href="/" class="topBar__links">HOTEL</a>
             </li>
-            <li class="navbar__item">
-                <a href="pokoje.html" class="navbar__links">POKOJE</a>
+            <li class="topBar__item">
+                <a href="pokoje.html" class="topBar__links">POKOJE</a>
             </li>
-            <li class="navbar__btn">
+            <li class="topBar__btn">
                 <a href="kontakt.html" class="button">KONTAKT</a>
              </li>
         </ul>
       </div>
     </nav>
-    <section class="container">
-        <div class="slider-wrapper">
-          <div class="slider">
-            <img id="slide-1" src="images/backdrop2.jpg"/>
-            <img id="slide-2" src="images/backdrop3.jpg"/>
-            <img id="slide-3" src="images/backdrop4.jpg"/>
-          </div>
-          <div class="slider-nav">
-            <a href="#slide-1"></a>
-            <a href="#slide-2"></a>
-            <a href="#slide-3"></a>
-          </div>
-        </div>
+    <section class="slider">
+      <div id="arrow-left" class="arrow"></div>
+      <div class="slide slide1"></div>
+      <div class="slide slide2"></div>
+      <div class="slide slide3"></div>
+      <div id="arrow-right" class="arrow"></div>
     </section>
     <section class="sidebar">
       <p class="char">bezpłatne wi-fi</p> 
@@ -56,44 +49,45 @@
       <p class="char">akceptujemy zwierzęta</p>
       <p class="char">monitorowany parking</p> 
       <div class="iconschar">
+        
         <img class="iconchar1" src="images/wifi.png"/>
         <img class="iconchar2" src="images/location.png"/>
+        <button class="button3" onclick="easteregg()"></button>
         <img class="iconchar3" src="images/pet.jpg"/>
         <img class="iconchar4" src="images/parking.png"/>
-
       </div>
     </section>
       <div class="book">
-            <div class="box-header">
+        <form name="bookingForm">
+            <div class="bookingHeader">
               <h4>Zaplanuj wyjazd</h4>
             </div>
-            <div class="input grid">
-            <div class="box">
+            <div class="bookingInput">
               <label>Data przyjazdu:</label>
               <input id="arrival" type="date">
             </div>
-            <div class="box">
+            <div class="bookingInput">
               <label>Data wyjazdu:</label>
               <input id="departure" type="date">
             </div>
-            <div class="box">
+            <div class="bookingInput">
               <label>Dorośli:</label>
-              <input id="nadults" type="number" min="0" placeholder="0">
+              <input id="nadults" type="number" min="1" placeholder="0">
             </div>
-            <div class="box">
+            <div class="bookingInput">
               <label>Dzieci:</label>
               <input id="nkids" type="number" min="0" placeholder="0">
             </div>
-            <div class="box">
-              <label for="typ">Wybierz klasę pokoju:</label>
-              <select id="typ" name="typpokoju">
+            <div class="bookingInput">
+              <label for="roomtype">Wybierz klasę pokoju:</label>
+              <select id="roomtype">
                 <option value="Standard">Standard</option>
                 <option value="Premium">Premium</option>
                 <option value="Vip">Vip</option>
               </select>
             </div>
-          </div>
-          <button id="szukajbutton" onclick="getValues()">SZUKAJ</button>
+          <input type="button" onclick='validateBookingForm()' value="SZUKAJ" id="searchBookingButton">
+        </form>
       <div class="mapcontainer">
         <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.0397886129626!2d19.908029076037675!3d50.085541913571674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a4a512089c3%3A0x289ec516e3941795!2sMarii%20Jaremy%205%2C%2031-318%20Krak%C3%B3w!5e0!3m2!1spl!2spl!4v1698152034426!5m2!1spl!2spl" width: style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>

@@ -9,45 +9,45 @@
     <link rel="shortcut icon" href="images/HotelLogo.ico"/>
     <link rel="stylesheet" href="styles.css">
   </head>
-  <body class="bodyBooking" onload="myFunction()">
-    <nav class="navbar">
+  <body class="bodyBooking" onload="getBookingValues1()">
+    <nav class="topBar">
       <div class="logo">
         <img src="images/HotelAzoriaLogo.jpg" alt="Coś poszło nie tak... Tu powinno być logo :["/>
       </div>
-      <div class="navbar__container">
-        <div class="navbar__toggle" id="mobile-menu">
+      <div class="topBar__container">
+        <div class="topBar__toggle" id="mobile-menu">
         <span class="bar">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
         </div>
-        <ul class="navbar__menu">
-            <li class="navbar__item">
-                <a href="/" class="navbar__links">HOTEL</a>
+        <ul class="topBar__menu">
+            <li class="topBar__item">
+                <a href="/" class="topBar__links">HOTEL</a>
             </li>
-            <li class="navbar__item">
-                <a href="pokoje.html" class="navbar__links">POKOJE</a>
+            <li class="topBar__item">
+                <a href="pokoje.html" class="topBar__links">POKOJE</a>
             </li>
-            <li class="navbar__btn">
+            <li class="topBar__btn">
                 <a href="kontakt.html" class="button">KONTAKT</a>
             </li>
         </ul>
       </div>
     </nav>
-    <div class="block">
-        <div class="blocktext">
-              <h4 id="blockp">Podsumowanie rezerwacji</h4>
-              Data przyjazdu: <span id="data">-</span><br> 
-              Data wyjazdu: <span id="data1"> -</span><br>
-              Liczba dorosłych: <span id="data2"> 0</span><br>
-              Liczba dzieci: <span id="data3"> 0</span><br>
-              Klasa pokoju: <span id="data4"> -</span><br><br>
-              <h4 id="blockp">Uzupełnij swoje dane</h4>
+    <div class="bookingArea">
+        <div class="bookingAreaText">
+              <h4 id="bookingAreaHeader">Podsumowanie rezerwacji</h4>
+              Data przyjazdu: <span id="bookingDataArrival">-</span><br> 
+              Data wyjazdu: <span id="bookingDataDeparture"> -</span><br>
+              Liczba dorosłych: <span id="bookingDataNumAdults"> 0</span><br>
+              Liczba dzieci: <span id="bookingDataNumKids"> 0</span><br>
+              Klasa pokoju: <span id="bookingDataRoomType"> -</span><br><br>
+              <h4 id="bookingAreaHeader">Uzupełnij swoje dane</h4>
               <label>Imię:</label>
-              <input id="name" type="text" maxlength="20"><br>
+              <input id="bookingName" type="text" maxlength="20"><br>
               <label>Numer telefonu:</label>
-              <input id="number" type="text" maxlength="10"><br>
-              <button id="potwierdzeniebutton" onclick="getValues2()">POTWIERDŹ</button>
+              <input id="bookingNumber" type="text" maxlength="10"><br>
+              <button id="confirmButton" onclick="getBookingValues2()">POTWIERDŹ</button>
         </div>
               <img id="roomphoto">
       </div>

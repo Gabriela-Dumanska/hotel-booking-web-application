@@ -9,42 +9,42 @@
     <link rel="shortcut icon" href="images/HotelLogo.ico"/>
     <link rel="stylesheet" href="styles.css">
   </head>
-  <body class="bodyBooking" onload="myFunction2()">
-    <nav class="navbar">
+  <body class="bodyBooking" onload="getConfirmationData()">
+    <nav class="topBar">
       <div class="logo">
         <img src="images/HotelAzoriaLogo.jpg" alt="Coś poszło nie tak... Tu powinno być logo :["/>
       </div>
-      <div class="navbar__container">
-        <div class="navbar__toggle" id="mobile-menu">
+      <div class="topBar__container">
+        <div class="topBar__toggle" id="mobile-menu">
         <span class="bar">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
         </div>
-        <ul class="navbar__menu">
-            <li class="navbar__item">
-                <a href="/" class="navbar__links">HOTEL</a>
+        <ul class="topBar__menu">
+            <li class="topBar__item">
+                <a href="/" class="topBar__links">HOTEL</a>
             </li>
-            <li class="navbar__item">
-                <a href="pokoje.html" class="navbar__links">POKOJE</a>
+            <li class="topBar__item">
+                <a href="pokoje.html" class="topBar__links">POKOJE</a>
             </li>
-            <li class="navbar__btn">
+            <li class="topBar__btn">
                 <a href="kontakt.html" class="button">KONTAKT</a>
             </li>
         </ul>
       </div>
     </nav>
-  <div class="block">
-    <div class="blocktext">
-        <h4 id="dziekujemy">Dziękujemy...</h4><br>
-        Data przyjazdu: <span id="data.2">-</span><br> 
-        Data wyjazdu: <span id="data1.2"> -</span><br>
-        Liczba dorosłych: <span id="data2.2"> 0</span><br>
-        Liczba dzieci: <span id="data3.2"> 0</span><br>
-        Klasa pokoju: <span id="data4.2"> -</span><br>
-        Imię: <span id="name2">-</span><br>
-        Nr tel.: <span id="number2">-</span><br><br>
-        <h4 id="dziekujemy">Do zobaczenia!</h4>
+  <div class="bookingArea">
+    <div class="bookingAreaText">
+        <h4>Dziękujemy...</h4><br>
+        Data przyjazdu: <span id="bookingDataArrival">-</span><br> 
+        Data wyjazdu: <span id="bookingDataDeparture"> -</span><br>
+        Liczba dorosłych: <span id="bookingDataNumAdults"> 0</span><br>
+        Liczba dzieci: <span id="bookingDataNumKids"> 0</span><br>
+        Klasa pokoju: <span id="bookingDataRoomType"> -</span><br>
+        Imię: <span id="bookingDataName">-</span><br>
+        Nr tel.: <span id="bookingDataNumber">-</span><br><br>
+        <h4>Do zobaczenia!</h4>
     </div>
           <img id="welcome" src="images/dziekuje.jpg">
   </div>
