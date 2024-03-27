@@ -7,3 +7,7 @@ The Hotel Azoria website is a responsive web application designed to promote the
 
 # Technologies Used
 HTML5, CSS3, JavaScript
+
+# Website link
+https://gabriela-dumanska.github.io/HotelAzoria-WDAI/
+
