@@ -10,4 +10,4 @@ It allows users to easily **book a room** at the hotel, making the booking proce
 - **JavaScript**
 
 ## Website Link
-🌐 [Visit Hotel Azoria](https://gabriela-dumanska.github.io/HotelAzoria-WDAI/)
+🌐 [Visit Hotel Azoria](https://gabriela-dumanska.github.io/hotel-booking-web-application/)
