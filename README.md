@@ -11,3 +11,7 @@ It allows users to easily **book a room** at the hotel, making the booking proce
 
 ## Website Link
 🌐 [Visit Hotel Azoria](https://gabriela-dumanska.github.io/hotel-booking-web-application/)
+
+---
+
+**P.S.** If you click on the cute little dog on the homepage a few times, you'll discover a delightful Easter egg! 🐶🥚✨
